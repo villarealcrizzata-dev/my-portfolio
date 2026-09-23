@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffc0cb;
+    color: #4a1f2d;
+}
+
+/* NAVIGATION */
+nav {
+    background: #ff69b4;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+nav h2 {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe4ec;
+}
+
+/* HOME */
+.home {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    gap: 50px;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h1 {
+    font-size: 48px;
+    color: #d63384;
+    margin-bottom: 15px;
+}
+
+.home-text h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.home-text p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.profile-container {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-container img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: #d63384;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #a61e63;
+}
+
+/* GENERAL SECTIONS */
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    color: #d63384;
+    margin-bottom: 35px;
+}
+
+/* ABOUT */
+.about-box {
+    background: #fff0f5;
+    padding: 35px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* PERSONAL INFORMATION */
+.info-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.info-card {
+    background: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+    color: #d63384;
+    margin-bottom: 10px;
+}
+
+/* EDUCATION */
+.education-box {
+    background: #fff0f5;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.education-box h3 {
+    color: #d63384;
+    margin-bottom: 10px;
+}
+
+.education-box p {
+    line-height: 1.7;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+/* GOALS */
+.goals-box {
+    background: #fff0f5;
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 20px;
+    line-height: 1.8;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* PROJECTS */
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project {
+    background: #fff0f5;
+    padding: 30px;
+    width: 280px;
+    min-height: 180px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+}
+
+.project h3 {
+    color: #d63384;
+    margin-bottom: 15px;
+}
+
+.project p {
+    line-height: 1.6;
+}
+
+/* CONTACT */
+.contact-box {
+    background: #fff0f5;
+    padding: 35px;
+    border-radius: 20px;
+    max-width: 650px;
+    margin: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-box p {
+    margin: 15px;
+    font-size: 17px;
+}
+
+/* FOOTER */
+footer {
+    background: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 35px;
+    }
+
+    .profile-container img {
+        width: 250px;
+        height: 250px;
+    }
+}
